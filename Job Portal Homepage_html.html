@@ -1,194 +1,280 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Job Portal</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Portal</title>
+
 <style>
-    body {
-        background-color: lightgray;
-        font-family:'Times New Roman', Times, serif;
-    }
 
-    h1 {
-        color: darkblue;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    h2 {
-        color:red;
-    }
+body {
+    background-color: lightgray;
+    font-family: Arial;
+    margin: 0;
+}
 
-    p {
-        color: black;
-    }
+h1 {
+    color: darkblue;
+    text-align: center;
+}
 
-    a {
-        color: blue;
+h2 {
+    color: red;
+    text-align: center;
+}
 
-        margin-right: 10px;
-    }
+p {
+    text-align: center;
+}
 
-    th {
-        background-color:bisque;
-        
-        color:black;
-    }
 
-    footer {
-    
-        color: gray;
-    }
+nav {
+    text-align: center;
+    margin: 10px;
+}
+
+a {
+    color: blue;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.profile-box {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.badge {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+
+form {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input, select {
+    padding: 6px;
+    width: 70%;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+th {
+    background-color: bisque;
+}
+
+tr:hover {
+    background-color: lightyellow;
+}
+
+
+button {
+    background-color: green;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+
+.testimonial-box, .contact-box {
+    background-color: white;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: gray;
+    color: white;
+    margin-top: 20px;
+}
+
 </style>
+</head>
 
 <body>
 
-    <h1>Job Portal</h1>
-    <p>Find your dream job</p>
+<h1>Job Portal</h1>
+<p>Find your dream job</p>
 
-    <hr>
-    <a href="#">Home</a> |
-    <a href="#">Jobs</a> |
-    <a href="#">Upload Resume</a> |
-    <a href="#">Login</a> |
-    <a href="#">Register</a>
+<hr>
 
-    <hr>
-    <h2>Search Jobs</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#">Jobs</a>
+<a href="#">Upload Resume</a>
+<a href="#">Login</a>
+<a href="#">Register</a>
+</nav>
 
-    <form>
-        <label>Job Title / Keyword:</label><br>
-        <input type="text" placeholder="Software Developer"><br><br>
+<hr>
 
-        <label>Location (State):</label><br>
-        <select>
-            <option>Select State</option>
-            <option>Andhra Pradesh</option>
-            <option>Arunachal Pradesh</option>
-            <option>Assam</option>
-            <option>Bihar</option>
-            <option>Chhattisgarh</option>
-            <option>Goa</option>
-            <option>Gujarat</option>
-            <option>Haryana</option>
-            <option>Himachal Pradesh</option>
-            <option>Jharkhand</option>
-            <option>Karnataka</option>
-            <option>Kerala</option>
-            <option>Madhya Pradesh</option>
-            <option>Maharashtra</option>
-            <option>Manipur</option>
-            <option>Meghalaya</option>
-            <option>Mizoram</option>
-            <option>Nagaland</option>
-            <option>Odisha</option>
-            <option>Punjab</option>
-            <option>Rajasthan</option>
-            <option>Sikkim</option>
-            <option>Tamil Nadu</option>
-            <option>Telangana</option>
-            <option>Tripura</option>
-            <option>Uttar Pradesh</option>
-            <option>Uttarakhand</option>
-            <option>West Bengal</option>
-            <option>Other</option>
-        </select><br><br>
+<div class="profile-box">
+<span class="badge">New</span>
 
-        <label>If Other, specify location:</label><br>
-        <input type="text" placeholder="Enter city/state"><br><br>
+<h3>Candidate Profile</h3>
+<p>Welcome, User!</p>
 
-        <input type="submit" value="Search">
-    </form>
+<button>View Profile</button>
+<button>Applied Jobs</button>
+<button>Logout</button>
+</div>
 
-    <hr>
-    <h2>Latest Jobs</h2>
+<hr>
 
-    <table border="2">
-        <tr>
-            <th>Job Title</th>
-            <th>Company Name</th>
-            <th>Location</th>
-            <th>Experience</th>
-            <th>Job Type</th>
-            <th>Apply Now</th>
-        </tr>
+<h2>Search Jobs</h2>
 
-        <tr>
-            <td>Software Engineer</td>
-            <td>TCS</td>
-            <td>Karnataka</td>
-            <td>1 - 3 Years</td>
-            <td>Full Time</td>
-            <td><button>Apply now</button></td>
-        </tr>
+<form>
 
-        <tr>
-            <td>Web Developer</td>
-            <td>WIPRO</td>
-            <td>Remote</td>
-            <td>Fresher</td>
-            <td>Internship</td>
-            <td><button>Apply now</button></td>
-        </tr>
+<label>Keyword</label><br>
+<input type="text"><br><br>
 
-        <tr>
-            <td>Data Analyst</td>
-            <td><img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png" alt="Google" width="40"></td>
-            <td>Maharashtra</td>
-            <td>2 - 4 Years</td>
-            <td>Full Time</td>
-            <td><button>Apply now</button></td>
-        </tr>
+<label>Location</label><br>
+<select>
+<option>Punjab</option>
+<option>Haryana</option>
+<option>Delhi</option>
+<option>Karnataka</option>
+<option>Maharashtra</option>
+<option>Tamil Nadu</option>
+</select><br><br>
 
-        <tr>
-            <td>Mobile App Developer</td>
-            <td>IOS</td>
-            <td>Telangana</td>
-            <td>1 - 2 Years</td>
-            <td>Full Time</td>
-            <td><button>Apply now</button></td>
-        </tr>
+<label>Salary Range</label><br>
+<select>
+<option>Any</option>
+<option>10k–25k</option>
+<option>25k–50k</option>
+<option>50k+</option>
+</select><br><br>
 
-        <tr>
-            <td>Digital Marketing Executive</td>
-            <td>Nokia</td>
-            <td>Delhi</td>
-            <td>Fresher</td>
-            <td>Part Time</td>
-            <td><button>Apply now</button></td>
-        </tr>
+<label>Job Type</label><br>
+<select>
+<option>Full Time</option>
+<option>Internship</option>
+<option>Remote</option>
+</select><br><br>
 
-        <tr>
-            <td>UI/UX Designer</td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png?20210729021049" alt="Microsoft" width="30"></td>
-            <td>Tamil Nadu</td>
-            <td>2 - 3 Years</td>
-            <td>Full Time</td>
-            <td><button>Apply now</button></td>
-        </tr>
+<label>Experience</label><br>
+<select>
+<option>Fresher</option>
+<option>1–2 Years</option>
+<option>3–5 Years</option>
+</select><br><br>
 
-        <tr>
-            <td>Cyber Security Analyst</td>
-            <td>Uber</td>
-            <td>Gujarat</td>
-            <td>3 - 5 Years</td>
-            <td>Full Time</td>
-            <td><button>Apply now</button></td>
-        </tr>
+<input type="submit" value="Search">
 
-        <tr>
-            <td>Cloud Engineer</td>
-            <td>Safari</td>
-            <td>Uttar Pradesh</td>
-            <td>2 - 4 Years</td>
-            <td>Full Time</td>
-            <td><button>Apply now</button></td>
-        </tr>
-    </table>
+</form>
 
-    <hr>
+<hr>
 
-    <!-- Footer -->
-    <p>&copy; 2026 Job Portal. All rights reserved.</p>
+<h2>Latest Jobs</h2>
+
+<table>
+
+<tr>
+<th>Job Title</th>
+<th>Company</th>
+<th>Location</th>
+<th>Experience</th>
+<th>Apply</th>
+</tr>
+
+<tr>
+<td>Software Engineer</td>
+<td>TCS</td>
+<td>Karnataka</td>
+<td>1–3 Years</td>
+<td><button>Apply</button></td>
+</tr>
+
+<tr>
+<td>Web Developer</td>
+<td>Wipro</td>
+<td>Remote</td>
+<td>Fresher</td>
+<td><button>Apply</button></td>
+</tr>
+
+<tr>
+<td>Data Analyst</td>
+<td>Google</td>
+<td>Maharashtra</td>
+<td>2–4 Years</td>
+<td><button>Apply</button></td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- TESTIMONIALS -->
+<h2>Testimonials</h2>
+
+<div class="testimonial-box">
+<p>"I got my first internship through this portal!"</p>
+<p><b>– Rahul</b></p>
+<hr>
+<p>"Very easy to use website."</p>
+<p><b>– Sneha</b></p>
+</div>
+
+<hr>
+
+<!-- CONTACT -->
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+<p>Email: support@jobportal.com</p>
+<p>Phone: 9872791266</p>
+</div>
+
+<footer>
+© 2026 Job Portal. All rights reserved.
+</footer>
 
 </body>
 </html>
