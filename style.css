@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body{
+height:100%;
+width: 100%;
+background-color: bisque;
+background-repeat: no-repeat;
+}
+h1{
+    border: 10px solid red;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+
+}
+img{
+
+    position: sticky;
+    top: 0;
+    border: 3px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+
+}
+h2{
+
+    border: 5px solid blue;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+
+}
