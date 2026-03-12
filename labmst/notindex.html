@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Expense Tracker</title>
+<link rel="stylesheet" href="STYLEN.CSS">
+</head>
+
+<body>
+
+<h2>Expense Tracker</h2>
+
+Name:
+<input type="text" id="name"><br><br>
+
+Amount:
+<input type="number" id="amount"><br><br>
+
+Category:
+<select id="category">
+<option>Food</option>
+<option>Travel</option>
+<option>Shopping</option>
+</select>
+
+<br><br>
+
+<button onclick="addExpense()">Add</button>
+<button onclick="updateExpense()">Update</button>
+
+<br><br>
+
+<ul id="list"></ul>
+
+<h3>Total: ₹ <span id="total">0</span></h3>
+
+<script src="scriptn.js"></script>
+
+</body>
+</html>
